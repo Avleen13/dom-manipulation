@@ -13,6 +13,8 @@
 // image.addEventListener('mouseout',changeTodislike);
 
 let button = document.getElementById('btn');
+
+
 function calNum()
 {
     parseInt();
@@ -20,7 +22,9 @@ function calNum()
     let firstnum=parseInt(document.getElementById('num1').value);
     let secondnum=parseInt(document.getElementById('num2').value);
     let sum =firstnum+secondnum;
-    alert(`The sum of ${firstnum} and ${secondnum} is ${sum}`);
+    let box = document.getElementById('answer');
+    box.innerHTML=`The sum of ${firstnum} and ${secondnum} is ${sum}`;
+    // alert(`The sum of ${firstnum} and ${secondnum} is ${sum}`);
 }
 button.addEventListener('click',calNum);
 
