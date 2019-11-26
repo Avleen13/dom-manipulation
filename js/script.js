@@ -64,29 +64,46 @@
 // button.addEventListener('click',calNum);
 
 
+// let button = document.getElementById('btn');
+// function calNum()
+// {
+//     let name=document.getElementById('num1').value;
+//     let number=parseInt(document.getElementById('num2').value);
+//     let score=parseInt(document.getElementById('num3').value);
+
+//     if(score >=90){
+//         alert(`You got A grade`);
+//     }
+//     else if(score >=80 && score<=89.99){
+//         alert(`You got B grade`);
+//     }   
+//     else if(score >=70 && score<=79.99){
+//         alert(`You got C grade`);
+//     }
+//     else if(score >=60 && score<=69.99){
+//         alert(`You got D grade`);
+//     }
+//     else if(score <=60){
+//         alert(`You got F grade`);
+//     }
+
+
+// }
+// button.addEventListener('click',calNum);
+
 let button = document.getElementById('btn');
 function calNum()
 {
-    let name=document.getElementById('num1').value;
-    let number=parseInt(document.getElementById('num2').value);
-    let score=parseInt(document.getElementById('num3').value);
-
-    if(score >=90){
-        alert(`You got A grade`);
+    let marks1=parseInt(document.getElementById('num1').value);
+    let marks2=parseInt(document.getElementById('num2').value);
+    let marks3=parseInt(document.getElementById('num3').value);
+    let avgMarks=marks1+marks2+marks3;
+    if(avgMarks >=50){
+        alert(`You passed the test`);
     }
-    else if(score >=80 && score<=89.99){
-        alert(`You got B grade`);
+    else if(avgMarks < 50){
+        alert(`You failed the test and give a makeup assignment`);
     }   
-    else if(score >=70 && score<=79.99){
-        alert(`You got C grade`);
-    }
-    else if(score >=60 && score<=69.99){
-        alert(`You got D grade`);
-    }
-    else if(score <=60){
-        alert(`You got F grade`);
-    }
-
 
 }
 button.addEventListener('click',calNum);
